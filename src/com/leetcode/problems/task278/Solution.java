@@ -5,22 +5,22 @@ package com.leetcode.problems.task278;
 
 public class Solution extends VersionControl {
 
-    public int firstBadVersion(int n) {
+    public int firstBadVersion(int n, int bad) {
         int left = 0;
         int right = n;
-        if (!isBadVersion(n))
-            return n + 1;
-        int mid = right / 2;
+        int mid = (left + right) / 2;
 
         while (left <= right) {
-            if (isBadVersion(mid)) {
+            mid = left + (right - left) / 2;
+            if (isBadVersion(mid, bad)) {
                 right = mid - 1;
-            }
-            else {
+            } else {
                 left = mid + 1;
             }
-            mid = right / 2;
         }
-        return mid + 1;
+        if (isBadVersion(mid, bad))
+            return mid;
+        else
+            return mid+1;
     }
 }

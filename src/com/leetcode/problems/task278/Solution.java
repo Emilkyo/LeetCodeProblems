@@ -3,7 +3,7 @@ package com.leetcode.problems.task278;
 /* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */
 
-public class Task278 extends VersionControl {
+public class Solution extends VersionControl {
 
     public int firstBadVersion(int n) {
         int left = 0;

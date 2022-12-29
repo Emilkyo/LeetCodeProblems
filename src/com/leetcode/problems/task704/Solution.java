@@ -1,6 +1,6 @@
 package com.leetcode.problems.task704;
 
-public class Task704 {
+public class Solution {
     public int search(int[] nums, int target) {
         int leftIndex = 0;
         int rightIndex = nums.length - 1;

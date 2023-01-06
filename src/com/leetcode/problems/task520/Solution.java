@@ -1,7 +1,7 @@
 package com.leetcode.problems.task520;
 
 //https://leetcode.com/problems/detect-capital/
-
+//TODO: try to determine the letter by ASCII code
 class Solution {
     public boolean detectCapitalUse(String word) {
         int upperCh = 0;

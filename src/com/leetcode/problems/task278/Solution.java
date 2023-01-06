@@ -5,7 +5,11 @@ package com.leetcode.problems.task278;
 
 public class Solution extends VersionControl {
 
+    private int n;
+    private int bad;
+
     public int firstBadVersion(int n, int bad) {
+        this.bad = bad;
         int left = 0;
         int right = n;
         int mid = (left + right) / 2;

@@ -8,6 +8,8 @@ class Solution {
                 index = i;
                 break;
             }
+            index = i;
+
         }
         int[] negative = new int[index];
         int[] positive = new int[nums.length - index];

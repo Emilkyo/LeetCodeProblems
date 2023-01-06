@@ -1,5 +1,6 @@
 package com.leetcode.problems.task704;
 
+//https://leetcode.com/problems/binary-search/description/
 public class Solution {
     public int search(int[] nums, int target) {
         int leftIndex = 0;
@@ -8,8 +9,7 @@ public class Solution {
             int middleIndex = (leftIndex + rightIndex) / 2;
             if (target == nums[middleIndex]) {
                 return middleIndex;
-            }
-            else {
+            } else {
                 if (target > nums[middleIndex])
                     leftIndex = middleIndex + 1;
                 else

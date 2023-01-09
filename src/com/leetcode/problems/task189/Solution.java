@@ -1,42 +1,41 @@
 package com.leetcode.problems.task189;
 
+//https://leetcode.com/problems/rotate-array/
+
 public class Solution {
     private final int[] nums;
+    private final int length;
 
     public Solution(int[] nums, int k) {
         this.nums = nums;
+        this.length = nums.length;
         rotate(nums, k);
     }
 
     public int[] result() {
-
         return nums;
     }
 
+    //Rotating step by step
     public void rotate(int[] nums, int k) {
-        int length = nums.length;
+        k %= nums.length;
 
         int index = length - k;
-        int[] result = new int[length];
-        if (k >= length) {       // 3 > 2
-            k = length;
-            for (int i = 0; i < length; i++, k--) {
-                result[i] = nums[k - 1];
-            }
-        } else {
-            int i = 0;
-            while (index < length) {
-                result[i] = nums[index];
-                index++;
-                i++;
-            }
-            index = length - k;
-            for (int p = 0; p < index; p++, k++) {
-                result[k] = nums[p];
-            }
+        int[] rotated = new int[length];
+        int i;
+        //first half array
+        for (i = 0; index < length; i++, index++) {
+            rotated[i] = nums[index];
         }
-        for (int i = 0; i < length; i++) {
-            nums[i] = result[i];
+
+        //second half array
+        index = length - k;
+        for (int j = 0; j < index; j++, i++) {
+            rotated[i] = nums[j];
+        }
+
+        for (int j = 0; j < length; j++) {
+            nums[j] = rotated[j];
         }
     }
 }

@@ -18,8 +18,8 @@ public class Solution {
 
     //Rotating step by step
     public void rotate(int[] nums, int k) {
+        if ((nums.length <= 1) || (k == 0)) return;
         k %= nums.length;
-
         int index = length - k;
         int[] rotated = new int[length];
         int i;

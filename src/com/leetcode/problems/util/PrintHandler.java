@@ -2,8 +2,8 @@ package com.leetcode.problems.util;
 
 import java.util.Arrays;
 
-public class printHandler {
-    public printHandler(int[] result, int[] expected) {
+public class PrintHandler {
+    public PrintHandler(int[] result, int[] expected) {
         System.out.println("result: " + Arrays.toString(result));
         System.out.println("expected: " + Arrays.toString(expected));
         boolean res = true;

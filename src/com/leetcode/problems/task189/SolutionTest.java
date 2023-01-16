@@ -2,7 +2,7 @@ package com.leetcode.problems.task189;
 
 import java.util.Arrays;
 
-import com.leetcode.problems.util.printHandler;
+import com.leetcode.problems.util.PrintHandler;
 
 public class SolutionTest {
     private int[][] array;
@@ -23,7 +23,7 @@ public class SolutionTest {
             System.out.printf("k: %d \n", k[i]);
             Solution solution = new Solution(array[i], k[i]);
             int[] result = solution.result();
-            new printHandler(result,expected[i]);
+            new PrintHandler(result,expected[i]);
         }
     }
 }

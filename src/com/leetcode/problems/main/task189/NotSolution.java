@@ -1,4 +1,4 @@
-package com.leetcode.problems.task189;
+package com.leetcode.problems.main.task189;
 public class NotSolution {
     private final int[] nums;
 

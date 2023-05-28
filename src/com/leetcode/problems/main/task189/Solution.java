@@ -1,4 +1,4 @@
-package com.leetcode.problems.task189;
+package com.leetcode.problems.main.task189;
 
 //https://leetcode.com/problems/rotate-array/
 

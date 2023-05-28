@@ -1,4 +1,4 @@
-package com.leetcode.problems.task1833;
+package com.leetcode.problems.main.task1833;
 
 // https://leetcode.com/problems/maximum-ice-cream-bars/
 

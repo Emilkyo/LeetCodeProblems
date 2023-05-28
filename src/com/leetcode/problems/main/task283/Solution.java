@@ -1,4 +1,4 @@
-package com.leetcode.problems.task283;
+package com.leetcode.problems.main.task283;
 
 //https://leetcode.com/problems/move-zeroes/
 public class Solution {

@@ -1,4 +1,6 @@
-package com.leetcode.problems.task35;
+package com.leetcode.problems.main.task35;
+
+import com.leetcode.problems.main.task35.Solution;
 
 import java.util.Arrays;
 

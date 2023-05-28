@@ -1,4 +1,4 @@
-package com.leetcode.problems.task278;
+package com.leetcode.problems.main.task278;
 
 /* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */

@@ -1,4 +1,4 @@
-package com.leetcode.problems.task520;
+package com.leetcode.problems.main.task520;
 
 //https://leetcode.com/problems/detect-capital/
 //TODO: try to determine the letter by ASCII code

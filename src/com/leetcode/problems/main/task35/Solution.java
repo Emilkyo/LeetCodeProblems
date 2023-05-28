@@ -1,4 +1,4 @@
-package com.leetcode.problems.task35;
+package com.leetcode.problems.main.task35;
 
 // https://leetcode.com/problems/search-insert-position/
 

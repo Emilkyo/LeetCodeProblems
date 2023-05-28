@@ -1,4 +1,4 @@
-package com.leetcode.problems.task944;
+package com.leetcode.problems.main.task944;
 
 class Solution {
     public int minDeletionSize(String[] strs) {

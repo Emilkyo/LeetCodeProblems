@@ -1,4 +1,4 @@
-package com.leetcode.problems.task704;
+package com.leetcode.problems.main.task704;
 
 //https://leetcode.com/problems/binary-search/description/
 public class Solution {

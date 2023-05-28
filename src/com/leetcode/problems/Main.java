@@ -1,6 +1,6 @@
 package com.leetcode.problems;
 
-import com.leetcode.problems.task283.SolutionTest;
+import com.leetcode.problems.main.task283.SolutionTest;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.leetcode.problems.task977;
+package com.leetcode.problems.main.task977;
 
 
 import java.util.Arrays;

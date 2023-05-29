@@ -3,19 +3,19 @@ package com.leetcode.problems.task1491;
 //  https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
 public class Solution {
     Solution() {
-        int[] salary = {4000, 3000, 1000, 2000};
-        average(salary);
+
     }
 
-    public double average(int[] salary) {
-        int maxV = 0, minV = 0;
-        double average = 0;
-        for (int i = 0; i < salary.length; i++) {
-            if (maxV < salary[i]) maxV = salary[i];
-            if (minV > salary[i]) minV = salary[i];
-            average += salary[i];
+    public double averageExcludeMinMax(int[] salary) {
+        int maxV = salary[0];
+        int minV = salary[0];
+        double sum = 0;
+        for (int j : salary) {
+            if (maxV < j) maxV = j;
+            if (minV > j) minV = j;
+            sum += j;
         }
-        average = average - (maxV + minV);
-        return average / (salary.length - 2);
+        sum = sum - maxV - minV;
+        return sum / (salary.length - 2);
     }
 }

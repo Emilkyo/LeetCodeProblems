@@ -8,8 +8,9 @@ You are given a list of bombs. The **range** of a bomb is defined as the area wh
 in the shape of a **circle** with the center as the location of the bomb.
 
 The bombs are represented by a **0-indexed** 2D integer array `bombs` where <code>
-bombs[i] = [x<sup>i</sup>, y<sup>i</sup>, r<sup>i</sup>]</code>. <code>x<sup>i</sup></code> and <code>y<sup>
-i</sup></code> denote the X-coordinate and Y-coordinate of the location of the <code>i<sup>th</sup></code> bomb, whereas
+bombs[i] = [x<sup>i</sup>, y<sup>i</sup>, r<sup>i</sup>]</code>. <code>x<sup>i</sup></code> and
+<code>y<sup>i</sup></code> denote the X-coordinate and Y-coordinate of the location of the <code>i<sup>th</sup></code>
+bomb, whereas
 <code>r<sup>i</sup></code> denotes the **radius** of its range.
 
 You may choose to detonate a **single** bomb. When a bomb is detonated, it will detonate **all bombs** that lie in its

@@ -15,63 +15,40 @@ public class Solution {
         return array.toString();
     }
 
+    private static final int[][] DIRECTIONS = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}, {1, 1}, {-1, -1}, {1, -1}, {-1, 1}};
+
     public int shortestPathBinaryMatrix(int[][] grid) {
-        int steps = 0;
-        for (int[] row : grid) {
-            for (int cell : row) {
+        int n = grid.length;
 
+        // Check if the starting or ending cell is blocked
+        if (grid[0][0] == 1 || grid[n - 1][n - 1] == 1)
+            return -1;
+
+        // Perform breadth-first search
+        Queue<int[]> queue = new LinkedList<>();
+        queue.offer(new int[]{0, 0, 1}); // Starting cell: (0, 0)
+        grid[0][0] = 1; // Mark the starting cell as visited
+
+        while (!queue.isEmpty()) {
+            int[] cell = queue.poll();
+            int row = cell[0];
+            int col = cell[1];
+            int pathLength = cell[2];
+
+            if (row == n - 1 && col == n - 1)
+                return pathLength;
+
+            // Explore all 8 directions
+            for (int[] direction : DIRECTIONS) {
+                int newRow = row + direction[0];
+                int newCol = col + direction[1];
+
+                if (newRow >= 0 && newRow < n && newCol >= 0 && newCol < n && grid[newRow][newCol] == 0) {
+                    queue.offer(new int[]{newRow, newCol, pathLength + 1});
+                    grid[newRow][newCol] = 1; // Mark the cell as visited
+                }
             }
         }
-        return steps;
-    }
-    private int bfs(int[][] matrix, int x, int y) {
-
-        // Queue for bfs traversal
-        Queue<int[]> q = new LinkedList<>();
-
-        int n = matrix.length;
-        int m = matrix[0].length;
-        q.offer(new int[] { x, y, 0 });
-
-        int ans = -1;
-        int[][] visited = new int[n][m];
-
-        while (!q.isEmpty()) {
-            int[] v = q.poll();
-            int i = v[0], j = v[1], moves = v[2];
-
-            if (i >= n || i < 0 || j >= m || j < 0) {
-                // As soon as p reaches
-                // out of the bounds stop
-                // bfs calls
-                ans = moves;
-                break;
-            } else {
-                if (visited[i][j] == 1)
-                    continue;
-                visited[i][j] = 1;
-
-                // Bfs calls in all
-                // possible directions
-                if (i + 1 >= n || matrix[i + 1][j] != 0)
-                    q.offer(new int[] { i + 1, j, moves + 1 });
-
-                if (i - 1 < 0 || matrix[i - 1][j] != 0)
-                    q.offer(new int[] { i - 1, j, moves + 1 });
-
-                if (j + 1 >= m || matrix[i][j + 1] != 0)
-                    q.offer(new int[] { i, j + 1, moves + 1 });
-
-                if (j - 1 < 0 || matrix[i][j - 1] != 0)
-                    q.offer(new int[] { i, j - 1, moves + 1 });
-            }
-        }
-
-        return ans;
-    }
-
-    public int minMoves(int[][] matrix, int x, int y) {
-        int ans = bfs(matrix, x, y);
-        return (ans >= 1e7) ? -1 : ans - 1;
+        return -1; // No clear path found
     }
 }

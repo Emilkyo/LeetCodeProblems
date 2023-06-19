@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    //  TODO: create tests
     public List<String> summaryRanges(int[] nums) {
         int l = nums.length;
         if (l == 0)

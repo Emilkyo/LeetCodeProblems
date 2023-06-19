@@ -1,6 +1,8 @@
 package com.leetcode.problems.task283;
 
 //https://leetcode.com/problems/move-zeroes/
+//  TODO: create description and tests
+
 public class Solution {
     private final int[] nums;
 

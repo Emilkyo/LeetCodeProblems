@@ -41,5 +41,3 @@ Check if these points make a straight line in the XY plane.
 | Accepted   | Submissions | Acceptance Rate |
 |------------|-------------|-----------------|
 | **203.7K** | **288.8K**  | **70.5%**       |
-
-coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]

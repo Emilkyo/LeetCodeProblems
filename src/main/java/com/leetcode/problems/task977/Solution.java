@@ -1,5 +1,7 @@
 package com.leetcode.problems.task977;
 // https://leetcode.com/problems/squares-of-a-sorted-array/
+//  TODO: create description and rewrite tests
+
 class Solution {
     public int[] sortedSquares(int[] nums) {
         int index = 0;

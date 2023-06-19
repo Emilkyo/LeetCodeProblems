@@ -1,5 +1,7 @@
 # [705. Design HashSet](https://leetcode.com/problems/design-hashset/)
 
+[//]: # (TODO: correct description)
+
 Design a HashSet without using any built-in hash table libraries.
 
 Implement `MyHashSet` class:

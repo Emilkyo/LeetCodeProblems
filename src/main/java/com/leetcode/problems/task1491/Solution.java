@@ -1,10 +1,8 @@
 package com.leetcode.problems.task1491;
 
 //  https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
+//  TODO: create description
 public class Solution {
-    Solution() {
-
-    }
 
     public double averageExcludeMinMax(int[] salary) {
         int maxV = salary[0];

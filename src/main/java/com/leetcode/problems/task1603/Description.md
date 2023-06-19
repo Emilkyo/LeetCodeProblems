@@ -2,6 +2,8 @@
 
 **https://leetcode.com/problems/design-parking-system/**
 
+[//]: # (TODO: rewrite description)
+
 Design a parking system for a parking lot. The parking lot has three kinds of parking spaces: big, medium, and small,
 with a fixed number of slots for each size.
 
@@ -26,7 +28,7 @@ that size space and return `true`.
     [[1, 1, 0], [1], [2], [3], [1]]
 
 **Output**
-    
+
     [null, true, true, false, false]
 
 **Explanation**

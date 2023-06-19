@@ -1,6 +1,7 @@
 package com.leetcode.problems.task1833;
 
 // https://leetcode.com/problems/maximum-ice-cream-bars/
+// TODO: add description and rewrite tests
 
 import java.util.Arrays;
 

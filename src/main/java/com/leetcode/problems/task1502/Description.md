@@ -19,18 +19,18 @@ Otherwise, return false.
 #### Example 1:
 
 <pre>
-    <b>Input:</b> arr = [3,5,1]
-    <b>Output:</b> true
-    <b>Explanation:</b> We can reorder the elements as [1,3,5] or [5,3,1] 
-    with differences 2 and -2 respectively, between each consecutive elements.
+<b>Input:</b> arr = [3,5,1]
+<b>Output:</b> true
+<b>Explanation:</b> We can reorder the elements as [1,3,5] or [5,3,1] 
+with differences 2 and -2 respectively, between each consecutive elements.
 </pre>
 
 #### Example 2:
 
 <pre>
-    <b>Input:</b> arr = [1,2,4]
-    <b>Output:</b> false
-    <b>Explanation:</b> There is no way to reorder the elements to obtain an arithmetic progression.
+<b>Input:</b> arr = [1,2,4]
+<b>Output:</b> false
+<b>Explanation:</b> There is no way to reorder the elements to obtain an arithmetic progression.
 </pre>
 
 #### Constraints:

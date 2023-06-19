@@ -1,5 +1,7 @@
 # [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/?envType=study-plan-v2&envId=leetcode-75)
 
+[//]: # (TODO: rewrite description)
+
 **Easy**
 
 You are given two strings `word1` and `word2`. Merge the strings by adding letters in alternating order, starting with

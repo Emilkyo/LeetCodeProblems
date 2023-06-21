@@ -6,7 +6,13 @@
     Medium
 </p>
 
+<p style="color:rgb(255 55 95);background-color:rgb(255 55 95/.15)">
+    Hard
+</p>
+
 #### Tags: Array, Sorting
+
+#### What's new?
 
 <details>
     <summary><b>Hint</b></summary>

@@ -25,7 +25,7 @@ public class UndergroundSystem {
             travelInfo.distance += travelTime;
             travelInfo.routes++;
         } else {
-            travels.put(travel, new Pair(travelTime, 1));
+            travels.put(travel, new Pair(travelTime));
         }
     }
 

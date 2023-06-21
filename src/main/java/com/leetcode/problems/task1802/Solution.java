@@ -1,7 +1,7 @@
 package com.leetcode.problems.task1802;
 
 public class Solution {
-    // TODO: solve this problem, add description and tests
+    //  TODO: solve this problem, add description and tests
     public int maxValue(int n, int index, int maxSum) {
         int[] nums = new int[n];
         int how = maxSum / n;

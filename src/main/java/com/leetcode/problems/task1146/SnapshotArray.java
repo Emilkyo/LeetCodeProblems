@@ -3,8 +3,8 @@ package com.leetcode.problems.task1146;
 import java.util.Map;
 
 public class SnapshotArray {
-    private int[] nums;
-    private int[][] historyRecord;
+    private final int[] nums;
+    private final int[][] historyRecord;
     private Map<Integer, Integer> historyRecordMap;
 
     public SnapshotArray(int length) {

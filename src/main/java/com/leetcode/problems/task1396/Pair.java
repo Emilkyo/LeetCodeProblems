@@ -11,8 +11,8 @@ public class Pair {
         this.time = time;
     }
 
-    Pair(int distance, int routes) {
+    Pair(int distance) {
         this.distance = distance;
-        this.routes = routes;
+        this.routes = 1;
     }
 }

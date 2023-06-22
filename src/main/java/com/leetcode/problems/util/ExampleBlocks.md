@@ -12,12 +12,12 @@
 
 #### Tags: Array, Sorting
 
-#### What's new?
-
 <details>
     <summary><b>Hint</b></summary>
         hint here
 </details>
+
+#### What's new?
 
 <pre>
 

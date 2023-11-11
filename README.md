@@ -11,12 +11,6 @@ results on [LeetCode profile](https://leetcode.com/E-mil/):
 I'm looking forward to keep solving problems with LeetCode and improve my programming skills and using new tools in this
 project, such as Docker or something else.
 
-### Future Additions
-
-- [ ] Docker Integration
-- [ ] Automatic Addition of Tasks in README.md
-- [ ] Task Description Parsing
-
 ## Usage
 
 1. Clone the repository:
